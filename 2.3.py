@@ -2,7 +2,7 @@ a = input('Число: ')
 
 def rev(a):
   if a.isdigit():
-    fin = a[::-1]
+    fin = a.reverse
     return print(fin)
   else:
     print('Только числа')
