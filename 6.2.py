@@ -28,9 +28,9 @@ def get_simple(index, simples=[], iteration=1, step=1000):
             b.append(a[i])
 
     if len(b) < index:
-        return get_simple(index, b, iteration+1, step)
+        return get_simple(index, b, iteration + 1, step)
     else:
-        return b[index-1]
+        return b[index - 1]
 
 
 get_simple(5)

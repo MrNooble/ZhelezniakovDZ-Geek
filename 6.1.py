@@ -1,14 +1,16 @@
 from memory_profiler import profile
 
+
 def is_simple(n):
     i = 2
     j = 0  # флаг
 
-    while i**2 <= n and j != 1:
+    while i ** 2 <= n and j != 1:
         if n % i == 0:
             j = 1
         i += 1
     return j != 1
+
 
 @profile
 def get_simple(n):
@@ -21,6 +23,7 @@ def get_simple(n):
         i += 1
 
     return simples[-1]
+
 
 get_simple(5)
 
